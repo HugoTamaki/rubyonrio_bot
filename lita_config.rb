@@ -19,6 +19,27 @@ Lita.configure do |config|
   # appropriate gem to the Gemfile.
   config.robot.adapter = :shell
 
+  # config.robot.adapter = :telegram
+  config.adapters.telegram.telegram_token = ENV["TELEGRAM_TOKEN"]
+
+  # giphy api
+  config.handlers.giphy.api_key = ENV["GIPHY_API_KEY"]
+  config.handlers.giphy.rating = 'g'
+
+  config.handlers.google_images.safe_search = :medium
+  config.handlers.google_images.google_cse_id = ENV["GOOGLE_CSE_ID"]
+  config.handlers.google_images.google_cse_key = ENV["GOOGLE_CSE_KEY"]
+
+  # redis config
+  config.redis[:url] = ENV["REDISTOGO_URL"]
+  config.http.port = ENV["PORT"]
+
+  config.handlers.keepalive.url = ENV["KEEPALIVE_URL"]
+  # config.handlers.keepalive.minutes = 300
+
+  config.handlers.youtube_me.api_key = ENV["GOOGLE_CSE_KEY"]
+
+
   ## Example: Set options for the chosen adapter.
   # config.adapter.username = "myname"
   # config.adapter.password = "secret"

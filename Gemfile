@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 gem "lita"
 
+gem "lita-telegram"
 gem "lita-devops-reactions"
 gem "lita-google-images", "~> 3.0.0"
 gem "lita-giphy"
