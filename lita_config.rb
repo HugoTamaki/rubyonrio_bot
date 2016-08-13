@@ -17,9 +17,9 @@ Lita.configure do |config|
 
   # The adapter you want to connect with. Make sure you've added the
   # appropriate gem to the Gemfile.
-  config.robot.adapter = :shell
+  # config.robot.adapter = :shell
 
-  # config.robot.adapter = :telegram
+  config.robot.adapter = :telegram
   config.adapters.telegram.telegram_token = ENV["TELEGRAM_TOKEN"]
 
   # giphy api
