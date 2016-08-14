@@ -3,6 +3,8 @@ Lita.configure do |config|
   config.robot.name = "rubyonrio_bot"
   config.robot.mention_name = "rubyonrio_bot"
 
+  config.adapters.shell.private_chat = true
+
   # The locale code for the language to use.
   # config.robot.locale = :en
 
